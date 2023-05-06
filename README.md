@@ -1,4 +1,4 @@
-# NOTE: For summary see Summary.md
+# NOTE: For summary see [Summary.md](https://github.com/vikramsardana/lcs_exercise/blob/master/Summary.md)
 
 # LCS Programming Exercise 
 This is a small project that demonstrates using a House public data source to display information about Members.
