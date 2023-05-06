@@ -23,13 +23,13 @@ $ yarn install
 $ yarn start
 ```
 
-The frontend will be available at `http://localhost:3000/` and the GraphQL Server will be available at ``http://localhost:4000/`
+The frontend will be available at `http://localhost:3000/` and the GraphQL Server will be available at `http://localhost:4000/`
 
 # Backend
 
 I left the dotnet api in place to continue serving the data on a local url, but as I am less familiar with dotnet specifically I did not do anything else with it.
 
-I set up an Apollo GraphQL server and client, to allow for searching and analysis of the data. After creating some resolvers, the server supports queries for all members, a specific member given the district, and for all members of a committee given the committee code (sample queries are at the bottom).
+I set up an Apollo GraphQL server and client, to allow for searching and analysis of the data. I created some resolvers and helper functions to support queries for all members, a specific member given the district, and for all members of a committee given the committee code (sample queries are at the bottom).
 
 
 # Frontend
@@ -44,7 +44,7 @@ The graph shows the members as nodes, with a link between two nodes reflecting t
 
 # To-Do
 
-If I had more time, I would have added sorting and pagination to the Member Information table, as well as giving users the ability to select which fields are and aren't part of the table. I have done this before, but because I am still newer to React it takes me longer than I had time for on this project. I would also have made the Member Information pages prettier (for example aligning the committee and subcommittee tables). I would also have added enhancements to the graph, possibly utilizing the committee query and resolver, which I made with the original intention of using them for the graph but then it didn't make sense to utilize when I was implementing the graph.
+If I had more time, I would have added sorting and pagination to the Member Information table, as well as giving users the ability to select which fields are and aren't part of the table. I have done this before, but because I am still newer to React it takes me longer than I had time for on this project. I would also have made the Member Information pages prettier (for example aligning the committee and subcommittee tables). I further would have added enhancements to the graph, possibly utilizing the committee query and resolver. I originally made those with the intention of using them when creating the graph but it didn't make sense to use them when ultimately populating the graph.
 
 A backend expansion I thought of but did not have time for was to have a local datastore and sourcing query results from there, so that updates could be made to the data and be reflected in the frontend.
 
